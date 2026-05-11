@@ -39,6 +39,7 @@ if search_clicked: # Wenn gesucht wird: API anfragen und Suchergebnisse im Sessi
 # Auswahlfeld & Abruf-Button
 
 stock_to_fetch = ""
+selected_option = ""
 
 st.write("Wähle den passenden Treffer aus und rufe die Daten ab:")
 
@@ -91,7 +92,7 @@ if fetch_clicked:
                 fig.update_layout(xaxis_title="Datum", yaxis_title="Preis in $")
                 st.plotly_chart(fig, use_container_width=True) # Plot in Streamlit zeigen
 
-                analysis = ai_getanalysis(stock_to_fetch, mammouth_key) # Perplexity API aufrufen
+                analysis = ai_getanalysis(selected_option, mammouth_key) # Perplexity API aufrufen
                 with st.container(border=True):
                     st.markdown(f"**Aktuelle Marktlage:**\n> {analysis}") # Die Zusammenfassung darstellen
 
