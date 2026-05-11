@@ -13,10 +13,10 @@ def ai_getanalysis(symbol, api_key):
     }
 
     prompt = (
-        f"Analysiere die aktuellsten Nachrichten und Analystenbewertungen zu dem US-Börsen-Ticker '{symbol}'. "
-        f"WICHTIG: '{symbol}' ist zwingend ein offizielles Ticker-Kürzel einer an der NYSE oder NASDAQ gelisteten Aktie "
+        f"Analysiere die aktuellsten Nachrichten und Analystenbewertungen zu dem Ticker '{symbol}'. "
+        f"WICHTIG: '{symbol}' ist zwingend ein offizielles Ticker-Kürzel einer Aktie "
         f"(z.B. steht 'DE' für das US-Unternehmen Deere & Company, NICHT für Deutschland oder eine deutsche Firma!). "
-        f"Leite aus dem Ticker zuerst das korrekte US-Unternehmen ab und recherchiere nur dazu. "
+        f"Leite aus dem Ticker zuerst das korrekte Unternehmen ab und recherchiere nur dazu. "
         f"Nenne absolut keine aktuellen Aktienkurse, Prozentangaben oder historische Kursdaten. "
         f"Verfasse eine zusammenhängende Zusammenfassung (ausschließlich Fließtext, absolut KEINE Stichpunkte!). "
         f"Antworte in maximal 3 bis 4 prägnanten, gut lesbaren Sätzen auf Deutsch. "
